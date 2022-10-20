@@ -12,8 +12,8 @@ const AddUser = props => {
     };
 
     return (
-        <Card>
-            <form className={classes.input} onSubmit={addUserHandler}>
+        <Card className={classes.input}>
+            <form onSubmit={addUserHandler}>
                 <label htmlFor='username'>Username</label>
                 <input id='username' type='text' />
                 <label htmlFor='age'>Age (Years)</label>
