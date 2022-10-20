@@ -18,10 +18,11 @@ const AddUser = props => {
         if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
             return;
         }
-        if (enteredAge < 1) {
+        // 👇 the unary operator is to help us change the enteredAge to a number, //
+        // if it isn't ready //
+        if (+enteredAge < 1) {
             return;
         }
-
         console.log(enteredUsername, enteredAge);
         setEnteredUsername('');
         setEnteredAge('');
