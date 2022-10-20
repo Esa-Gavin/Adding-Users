@@ -6,7 +6,12 @@ import classes from './Button.module.css';
 // otherwise the default type is button //
 // || stands for OR //
 const Button = props => {
-    return <button className={classes.button} type={props.type || 'button'}>Add User</button>
+    return <button
+        className={classes.button}
+        type={props.type || 'button'}
+        onClick={onClick}>
+        {props.children}
+    </button>
 };
 
 export default Button;
