@@ -15,12 +15,13 @@
   font: inherit;
   display: block;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #dddddd;
   padding: 0.15rem;
   margin-bottom: 0.5rem;
 }
 
 .input input:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
   outline: none;
-  border-color: #4f005f;
 }
