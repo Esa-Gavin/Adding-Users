@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 
 
 import classes from './AddUser.module.css';
@@ -57,7 +57,7 @@ const AddUser = props => {
         // the reason we use error at the error modal component, //
         // is to check whether error is a thing and if it is (true), //
         // we output error modal component 👨‍🚀 //
-        <div>
+        <Fragment>
             {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler} />}
             <Card className={classes.input}>
                 <form onSubmit={addUserHandler}>
@@ -68,7 +68,7 @@ const AddUser = props => {
                     <Button type='submit'>Add User</Button>
                 </form>
             </Card>
-        </div>
+        </Fragment>
 
     )
 };
